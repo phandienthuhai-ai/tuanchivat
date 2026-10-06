@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trang web của tôi</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f2f2f2;
+      color: #222;
+    }
+
+    header {
+      background: #2196f3;
+      color: white;
+      padding: 25px;
+      text-align: center;
+    }
+
+    nav {
+      background: #333;
+      text-align: center;
+      padding: 12px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+    }
+
+    main {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 20px;
+      background: white;
+      border-radius: 12px;
+      text-align: center;
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 8px;
+      background: #2196f3;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #1976d2;
+    }
+
+    footer {
+      margin-top: 40px;
+      padding: 20px;
+      background: #333;
+      color: white;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Xin chào 👋</h1>
+    <p>Đây là trang web đầu tiên của tôi</p>
+  </header>
+
+  <nav>
+    <a href="#">Trang chủ</a>
+    <a href="#">Giới thiệu</a>
+    <a href="#">Liên hệ</a>
+  </nav>
+
+  <main>
+    <h2>Chào mừng bạn!</h2>
+    <p>Đây là một trang web đơn giản được tạo bằng HTML, CSS và JavaScript.</p>
+
+    <button onclick="hello()">Bấm vào đây</button>
+
+    <p id="message"></p>
+  </main>
+
+  <footer>
+    © 2026 - Trang web của tôi
+  </footer>
+
+  <script>
+    function hello() {
+      document.getElementById("message").textContent =
+        "Bạn vừa bấm nút! 🎉";
+    }
+  </script>
+
+</body>
+</html>
